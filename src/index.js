@@ -1,3 +1,15 @@
+function toggleMenu() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    if (dropdownMenu.style.display === 'flex') {
+      dropdownMenu.style.display = 'none';
+    } else {
+      dropdownMenu.style.display = 'flex';
+      dropdownMenu.style.alignItems = 'center';
+      dropdownMenu.style.justifyContent = 'space-around';
+    }
+  }
+  
+
 const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
@@ -31,6 +43,9 @@ function sendEmail() {
 
 
 
+
+
+
 // function checkInputs() {
 //     const items = document.querySelectorAll(".item");
 
@@ -61,3 +76,12 @@ form.addEventListener("submit", (e) => {
     form.reset();
     return false;
 });
+
+
+
+
+
+
+
+
+
