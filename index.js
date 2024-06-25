@@ -8,6 +8,8 @@ function toggleMenu() {
       dropdownMenu.style.justifyContent = 'space-around';
     }
   }
+
+
   
 
 const form = document.querySelector("form");

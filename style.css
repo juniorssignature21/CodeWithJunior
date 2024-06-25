@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
+
 header{
     width: screen;
     height: 80vh;
@@ -284,6 +286,13 @@ header{
     width: 95vw;
     height: inherit;
 }
+.col-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin: 10% 0;
+}
 .myskills{
     width: 95vw;
     height: 70vh;
@@ -293,15 +302,43 @@ header{
     flex-direction: column;
 }
 .row{
-    width: 70vw;
-    height: 70vh;
+    /* width: 70vw; */
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
+.span {
+    width: 400px;
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+
+}
+.span span{
+    /* display: inline; */
+    /* width: 200px; */
+    height: 20px;
+    background-color: #e27209f3;
+    border-radius: inherit;
+}
+.span.html span{
+    width: 90%;
+}
+.span.py span{
+    width: 50%;
+}
+.span.js span{
+    width: 60%;
+}
+.span.css span{
+    width: 85%;
+}
+
 .col{
-    width: 50vw;
+    /* width: 50vw; */
     color: #fff;
     /* display: flex;
     align-items: center;
@@ -613,6 +650,17 @@ footer{
     .banner-img img{
         width: 300px;
     }
+    .row{
+        width: 90vw;
+        justify-content: center;
+        
+    }
+    .col-div{
+        width: 100%;
+    }
+    .span{
+        width: 90vw;
+    }
 }
 @media only screen and (max-width:375px) {
 
@@ -643,5 +691,7 @@ footer{
     footer p{
         font-size: 12px;
     }
+    
+    
 
 }
